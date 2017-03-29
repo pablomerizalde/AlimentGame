@@ -11,3 +11,4 @@ function comidas()
 	obj.push(new alimento(10,10,10,10));
 	console.log(obj[0].carbohidratos);
 }
+//HOLIS
