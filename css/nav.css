@@ -1,0 +1,14 @@
+#nav{
+line-height: 80px;
+height: 80px;
+background-color: rgba(0, 130, 255, 0.3);
+ box-shadow: 6px 6px 11px #999;
+
+  }
+
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+      background: #2E2EFE;
+	  height: 80px;
+ }
