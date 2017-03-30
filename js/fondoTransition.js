@@ -1,12 +1,12 @@
 var x= 0;
-
+color="url('images/amanecer.jpg')";
 function cambiarfondo(color){
 document.body.style.backgroundImage = color;
    // $('body').css('background-image', 'url(js/1.jpg)');
 }
 
 
-var change= window.setInterval(cambiar,1000);
+var change= window.setInterval(cambiar,5000);
 
 function cambiar(){
 
@@ -14,19 +14,19 @@ function cambiar(){
 
     switch(x){
         case 1:
-            cambiarfondo("url('js/1.jpg')");
+            cambiarfondo("url('images/amanecer.jpg')");
         break
 
         case 2:
-            cambiarfondo("url('js/2.jpg')");
+            cambiarfondo("url('images/tarde.jpg')");
         break
 
         case 3:
-            cambiarfondo("lime");
+            cambiarfondo("url('images/atardecer.jpg')");
         break
 
         case 4:
-            cambiarfondo("white");
+            cambiarfondo("url('images/noche.jpg')");
         break
 
         case 5:
