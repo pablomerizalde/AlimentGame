@@ -2,7 +2,6 @@
 var col = document.getElementsById("barr2");
 var acz = document.getElementsById("barr3");
 var azc = document.getElementsById("barr4");*/
-console.log("HOLA");
 
 
 
