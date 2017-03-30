@@ -8,19 +8,9 @@ console.log("HOLA");
 
 function add(i){
 	console.log(obj[i]);
-	if((carb+obj[i].carbohidratos)<=100){
-		carb+=obj[i].carbohidratos;
-		$('#barr1').css('width', carb + '%');
-	}else{
-		$('#barr1').removeClass('progress-bar-success');
-		$('#barr1').addClass('progress-bar-danger');
-	}
-	cole+=obj[i].colesterol;
-	$('#barr2').css('width', cole + '%');
-	acid+=obj[i].acidez;
-	$('#barr3').css('width', acid + '%');
-	azuc+=obj[i].azucar;
-	$('#barr4').css('width', azuc + '%');
-
+	carb = updateBarra(obj[i].carbohidratos, carb, '#barr1',0,100,30,60);
+	cole= updateBarra(obj[i].colesterol, cole, '#barr2',0,100,20,70) ;
+	acid= updateBarra(obj[i].acidez, acid, '#barr3',0,100,20,70) ;
+	azuc = updateBarra(obj[i].azucar, azuc, '#barr4',0,100,20,70) ;
 }
 
