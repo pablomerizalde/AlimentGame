@@ -31,14 +31,18 @@ function alimentar(){
 		}
 		//add(stack[i]);
 	}
+	cambiar();
 	//stack = [];
 }
 
 function add(com){
 	console.log(com);
-	carb = updateBarra(com.carbohidratos, carb, '#barr1',0,100,30,60);
-	cole= updateBarra(com.colesterol, cole, '#barr2',0,100,20,70) ;
-	acid= updateBarra(com.acidez, acid, '#barr3',0,100,20,70) ;
-	azuc = updateBarra(com.azucar, azuc, '#barr4',0,100,20,70) ;
+	carb = updateBarra(com.carbohidratos, carb, '#barr1',0,100,30,60,15,84);
+	cole= updateBarra(com.colesterol, cole, '#barr2',0,100,20,70,15,85);
+	acid= updateBarra(com.acidez, acid, '#barr3',0,100,20,70,15,85);
+	azuc = updateBarra(com.azucar, azuc, '#barr4',0,100,20,70,15,85);
 }
 
+function gasto(){
+	var ca = carb*edad*peso/8;
+}

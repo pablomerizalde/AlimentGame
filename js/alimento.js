@@ -6,4 +6,3 @@ alimento = function(car,col,acz,azc,id){
 	this.activo=false;
 	this.id=id;
 }
-
