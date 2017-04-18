@@ -19,3 +19,10 @@ video {
     -webkit-transition: 1s opacity;
     transition: 1s opacity;
 }
+
+body{
+    background-image: url("../images/amanecer.gif");
+
+    background-size: cover;
+    background-position:center;
+}
