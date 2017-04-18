@@ -1,3 +1,4 @@
+
 /*var car = document.getElementsById("barr1");
 var col = document.getElementsById("barr2");
 var acz = document.getElementsById("barr3");
@@ -18,29 +19,43 @@ function addUnidad(i){
 		$(obj[i].id).addClass("img-selected");
 		//stack.push(obj[i]);
 	}
-	console.log(obj[i].activo);
+	//console.log(obj[i].activo);
 }
 
 
 function alimentar(){
-	for (var i = obj.length - 1; i >= 0; i--) {
-		if(obj[i].activo){
-			add(obj[i])
-			obj[i].activo=false;
-			$(obj[i].id).removeClass("img-selected");
+	if(obj.length!=0){
+		for (var i = 0; i < obj.length; i++) {
+			if(obj[i].activo){
+				add(obj[i])
+				obj[i].activo=false;
+				$(obj[i].id).removeClass("img-selected");
+			}
+			
+				//console.log(yellow +", "+ green +", "+red);
+				if(green!=0 || red !=0 || yellow !=0){
+				upBigVar();
+				green = 0;
+				red= 0;
+				yellow =0;
+			}
+				
+			
+			//add(stack[i]);
 		}
-		//add(stack[i]);
+		
 	}
 	cambiar();
+	console.log(VecRYG)
 	//stack = [];
 }
 
 function add(com){
-	console.log(com);
-	carb = updateBarra(com.carbohidratos, carb, '#barr1',0,100,30,60,15,84);
-	cole= updateBarra(com.colesterol, cole, '#barr2',0,100,20,70,15,85);
-	acid= updateBarra(com.acidez, acid, '#barr3',0,100,20,70,15,85);
-	azuc = updateBarra(com.azucar, azuc, '#barr4',0,100,20,70,15,85);
+	//console.log(com);
+	carb = updateBarra(com.carbohidratos, carb, '#barr1',0,100,30,50,10,70);
+	cole= updateBarra(com.colesterol, cole, '#barr2',0,100,25,60,10,80);
+	acid= updateBarra(com.acidez, acid, '#barr3',0,100,40,57,29,71);
+	azuc = updateBarra(com.azucar, azuc, '#barr4',0,100,25,42,13,63);
 }
 
 function gasto(){
