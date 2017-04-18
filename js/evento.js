@@ -31,9 +31,8 @@ function alimentar(){
 				obj[i].activo=false;
 				$(obj[i].id).removeClass("img-selected");
 			}
-			
 				//console.log(yellow +", "+ green +", "+red);
-				if(green!=0 || red !=0 || yellow !=0){
+			if(green!=0 || red !=0 || yellow !=0){
 				upBigVar();
 				green = 0;
 				red= 0;
